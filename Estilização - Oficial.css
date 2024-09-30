@@ -1,0 +1,150 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:#000000;
+}
+
+.Header{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.Why{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.Header h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.Header h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(10, 187, 241);
+}
+.Header p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.Conteudo{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 20px;
+}
+
+.Sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.Imagem-Sobre{
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.Imagem-Sobre img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.Imagem-Sobre:hover img{
+    transform: scale(1.2);
+}
+
+.Conteudo-Sobre{
+    flex:1;
+}
+.Conteudo-Sobre h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.Conteudo-Sobre p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:#fff;
+}
+.Conteudo-Sobre .Saiba-mais{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(10, 187, 241);
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.Conteudo-Sobre .Saiba-mais:hover{
+    background-color: rgb(43, 89, 183);
+}
+
+@media screen and (max-width:768px){
+    .Header, h1{
+        padding: 0px 20px;
+    }
+
+    .Header h1{
+        font-size: 36px;
+    }
+
+    .header p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    
+    .Conteudo{
+        padding: 0px;
+    }
+    
+    .Sobre{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .Why{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .Imagem-Sobre{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .Conteudo-Sobre p{
+        padding: 0px;
+        font-stretch: 16px;
+    }
+
+    .Conteudo-Sobre .Saiba-mais:hover{
+        font-size: 16px;
+    }
+}
